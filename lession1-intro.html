@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>htlm only 🐢</title>
+  </head>
+  <body>
+    <h1>Hell world!</h1>
+    <section>section tag</section>
+    <div>div tag</div>
+    <p>paragraph tag</p>
+    <!-- comment tag -->
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+
+    <!-- link -->
+    <a href="https://www.google.com">google</a>
+    <!-- space tag -->
+    &nbsp;
+    <a href="https://www.google.com" target="_blank">google new tab</a>
+
+    <ul>
+      <li>list item 1</li>
+      <li>list item 2</li>
+      <li>list item 3</li>
+    </ul>
+
+    <ol>
+      <li>list item 1</li>
+      <li>list item 2</li>
+      <li>list item 3</li>
+    </ol>
+
+    <div>
+      <!-- table tag -->
+      <h3>Table</h3>
+      <table border="1">
+        <caption>
+          cap title
+        </caption>
+        <tr>
+          <th>header 1</th>
+          <th>header 2</th>
+          <th>header 3</th>
+        </tr>
+        <tr>
+          <td>cell 1</td>
+          <td>cell 2</td>
+          <td>cell 3</td>
+        </tr>
+        <tr>
+          <td>cell 1</td>
+          <td>cell 2</td>
+          <td>cell 3</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <!-- image tag -->
+      <img src="/images/test.png" alt="" />
+      <img src="/images/test.png" alt="" width="100" height="100" />
+      <!-- image from url -->
+      <img src="https://picsum.photos/200" alt="" width="100" height="100" />
+    </div>
+
+    <!-- audio -->
+    <div>
+      <h3>audio</h3>
+      <audio controls>
+        <source src="src/horse.ogg" type="audio/ogg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <!--  video tag -->
+    <div>
+      <h3>video</h3>
+      <video width="400" controls>
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support HTML video.
+      </video>
+    </div>
+
+    <!-- audio from url -->
+    <div>
+      <h3>audio from ulr</h3>
+      <audio controls>
+        <source
+          src="https://www.w3schools.com/html/horse.ogg"
+          type="audio/ogg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <!-- iframe -->
+    <div>
+      <h3>iframe tag</h3>
+      <iframe
+        width="420"
+        height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      >
+      </iframe>
+    </div>
+
+    <!-- form -->
+    <div>
+      <h3>Form</h3>
+      <form>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" />
+
+        <div>
+          <h4>Language</h4>
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">CSS</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label>
+        </div>
+
+        <div>
+          <h4>Skills</h4>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <label for="vehicle1"> I have a bike</label><br />
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+          <label for="vehicle2"> I have a car</label><br />
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+          <label for="vehicle3"> I have a boat</label>
+        </div>
+
+        <div>
+            <h4>select</h4>
+            <select name="" id="">
+                <option value="1">Job</option>
+                <option value="2">UX</option>
+            </select>
+            <div>
+                <textarea name="" id="" cols="30" rows="3" placeholder="address"></textarea>
+            </div>
+
+            <div>
+                <button type="button" onclick="alert('clicked')">click me</button>
+                <button type="reset">cancel</button>
+                <button type="submit">submit</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

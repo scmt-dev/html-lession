@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <h1>Todo</h1>
+    <input type="text" placeholder="todo" /> <button id="button">Add</button>
+    <ul id="todoList"></ul>
+    <script>
+      var todos = [
+        {
+          id: 1,
+          text: "Learn javascript",
+          isCompleted: false,
+        },
+      ];
+      var todoList = document.getElementById("todoList");
+      var input = document.querySelector("input");
+      var button = document.getElementById("button");
+
+      // render todos
+      function renderTodos() {
+        todoList.innerHTML = "";
+        for (var i = 0; i < todos.length; i++) {
+          var todo = todos[i];
+          var li = document.createElement("li");
+          li.setAttribute("data-id", todo.id);
+      
+          var btn = document.createElement("button");
+
+          // remove todo
+          btn.textContent = "X";
+          btn.addEventListener("click", function (e) {
+            var id = e.target.parentElement.getAttribute("data-id");
+            todos = todos.filter((todo) => todo.id != id);
+            renderTodos();
+          });
+          
+          li.appendChild(btn);
+          todoList.appendChild(li);
+        }
+      }
+
+      function addTodo() {
+        var todo = {
+          id: todos.length + 1,
+          text: input.value,
+          isCompleted: false,
+        };
+        todos.push(todo);
+        input.value = "";
+        input.focus();
+        renderTodos();
+      }
+
+      button.addEventListener("click", function () {
+        var todo = input.value;
+        addTodo()
+      });
+
+      renderTodos();
+    </script>
+  </body>
+</html>
