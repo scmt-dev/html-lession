@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+    <style>
+        /* main color : #64d6c5; drak color : #384961  */
+        *{ margin: 0; padding: 0; } 
+        .bg-green{
+            background-color: #64d6c5;
+        }
+        .bg-dark{
+            background-color: #384961;
+            color: rgb(211, 211, 211);
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100vh;
+        }
+        .input{
+            background-color: transparent;
+            border: none;
+            color: white;
+            border-bottom: 1px solid #dadadad0;
+        }
+        .input:focus{
+            outline: none;
+            border-bottom: 1px solid #64d6c5;
+        }
+    </style>
+</head>
+<body>
+    <section class="grid">
+        <div class="bg-green">
+            <img src="./images/test.png" width="100" alt="">
+        </div>
+        <div class="bg-dark">
+            <p>Full name</p>
+            <input type="text" class="input">
+            <p>Password</p>
+            <input type="text">
+            <input type="button" value="sign in">
+        </div>
+    </section>
+</body>
+</html>
